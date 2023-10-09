@@ -10,7 +10,7 @@ public class pratice  {
         
         //find unique element int arry
 //using hashmap
-       // int a[]={18,11,2,2,3,4,4};
+        int a[]={18,11,2,2,3,4,4};
         // HashMap<Integer,Integer>m=new HashMap<>();
         // for(int i=0;i<a.length;i++){
         //     m.put(a[i],i);
@@ -37,25 +37,34 @@ public class pratice  {
             // System.out.print( b[i] + " ");   
 
 // using multiple loop
-  int a[] = { 10, 3, 5, 3, 9, 22, 4, 3, 1, 5, 6 };
-          int b[]=new int [a.length];
-          int index=0;
-          for(int i=0;i<a.length;i++){
-              int flag=0;
-              for(int j=0;j<i;j++){
-                  if(a[i]== a[j]){
-                  flag=1;
-                  break;
-                  }
-              }
-              if(flag ==0)  {
-                  b[index]=a[i];
-                   index++;
+//   int a[] = { 10, 3, 5, 3, 9, 22, 4, 3, 1, 5, 6 };
+//           int b[]=new int [a.length];
+//           int index=0;
+//           for(int i=0;i<a.length;i++){
+//               int flag=0;
+//               for(int j=0;j<i;j++){
+//                   if(a[i]== a[j]){
+//                   flag=1;
+//                   break;
+//                   }
+//               }
+//               if(flag ==0)  {
+//                   b[index]=a[i];
+//                   index++;
+//              }
+//           }
+//           for(int i=0;i<index;i++){
+//               System.out.print(b[i]+" ");
+//           }
+
+//usint hashset
+
+         HashSet<Integer> set = new HashSet<>();
+         for(int i=0;i<a.length;i++){
+             if(!set.contains(a[i])){
+                 set.add(a[i]);
              }
-          }
-          for(int i=0;i<index;i++){
-              System.out.print(b[i]+" ");
-          }
+         }System.out.println(set);
 
        
 
