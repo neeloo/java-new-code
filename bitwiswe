@@ -1,0 +1,21 @@
+import java.util.*;
+public class HelloWorld{
+
+     public static void main(String []args){
+       // System.out.println("Hello, World!");
+         Scanner sc = new Scanner(System.in);
+         System.out.print("Enter your no: ");
+        //  String name = sc.nextLine();
+        //  System.out.println("Name is: " + name);
+          int n=sc.nextInt();
+        //   System.out.println("no is :"+n);
+    
+        if((n&1)==0){
+            System.out.println(" no is even");
+        }else {
+            System.out.println(" no is odd");
+        }
+        
+
+     }
+}
